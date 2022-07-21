@@ -23,7 +23,14 @@
     justify-content: space-between;
     color: #4B4B4B;
     border-bottom: 2px double grey;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    background-color: aliceblue;
 }
+
 
 .header .logo {
     width: 20vw;
