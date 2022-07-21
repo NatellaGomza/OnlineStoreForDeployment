@@ -26,6 +26,7 @@
     border-color: rgb(253, 122, 57);
     border-style: solid;
     text-align: center;
+    border-right-color: transparent;
 }
 
 .deleteButton {

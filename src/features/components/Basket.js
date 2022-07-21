@@ -18,7 +18,7 @@ function InitBasket(props) {
         readStorage();
         deleteFromBasket.addListener("deleteProduct", deleteProduct);
         addToBasket.addListener("newProduct", addProductToBasket);
-    })
+    }, [])
 
     const deleteProduct = (deleteProduct) => {
         deletedProduct = deleteProduct;
@@ -73,7 +73,11 @@ function InitBasket(props) {
 
         fetch(dataBaseServerURL, { method: 'post', body: postRequestUpdate })
             .then(response => response.json())
-            .then(data => updateRedux())
+            .then((data) => {
+                if (!!data.result) {
+                    updateRedux(data)
+                }
+            })
             .catch(error => alert("Ошибка сервера! Повторите попытку позднее!"));
 
         deletedProduct = null;
