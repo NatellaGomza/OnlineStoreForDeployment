@@ -1,0 +1,11 @@
+.company > *{
+text-align: center;
+}
+
+.company h1 {
+    padding: 10px 0px;
+}
+
+.company p {
+    font-size: 1.8vw;
+}

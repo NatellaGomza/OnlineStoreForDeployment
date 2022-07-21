@@ -1,0 +1,43 @@
+﻿.photoWrapper {
+    width: 200px;
+}
+
+.photoWrapper h1 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #504A40;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.photoWrapper a {
+    display: flex;
+    width: 250px;
+    max-width: 100%;
+    padding: 0 5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none !important;
+    margin: 10px;
+}
+
+.photoWrapper img {
+    width: calc(100% - 10px);
+}
+
+.photoWrapper .header-round {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 20px;
+    color: #504A40;
+}
+
+.photoWrapper .desk-round {
+    font-size: 1.5vw;
+    text-align: center;
+    color: #504A40;
+}

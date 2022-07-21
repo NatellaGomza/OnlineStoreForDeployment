@@ -1,0 +1,22 @@
+.basketHeader {
+    text-align: center;
+}
+
+.result {
+    display: flex;
+    width:80%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.result .sum {
+    flex-basis:19%;
+    display:flex;
+    justify-content: center;
+}
+
+.resultText {
+    flex-basis:62%;
+    display:flex;
+    justify-content: flex-end;
+}

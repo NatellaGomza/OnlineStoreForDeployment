@@ -1,0 +1,33 @@
+.basketItemWrapper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid rgb(253, 122, 57);
+    border-radius: 10px;
+}
+
+.basketItemWrapper>* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basketItemWrapper img {
+    width: 20vw;
+}
+
+.basketItemWrapper div:first-child {
+    flex-basis: 32%;
+}
+
+.itemInBasket {
+    flex-basis: 17%;
+    border-width: 0px 1px;
+    border-color: rgb(253, 122, 57);
+    border-style: solid;
+    text-align: center;
+}
+
+.deleteButton {
+    height: 50px;
+}
