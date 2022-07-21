@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.basket {
+    margin-top:100px;
+}
+
 .result {
     display: flex;
     width:80%;

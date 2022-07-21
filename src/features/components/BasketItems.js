@@ -22,7 +22,7 @@ function InitBasketItems(props) {
     }, 0);
 
     return (
-        <div>
+        <div className="basket">
             <h1 className="basketHeader">Товары в корзине</h1>
             {(!!items.length) ? <div>{items}</div> : <p>Корзина пуста</p>}
             {(!!items.length) &&
