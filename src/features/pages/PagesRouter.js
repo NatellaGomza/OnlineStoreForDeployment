@@ -8,7 +8,7 @@ import Page_ProductsList from './Page_ProductsList';
 import Page_AllProducts from './Page_AllProducts';
 
 function PagesRouter() {
-  console.log("render pagerouter");
+
     return (
         <Routes>
           <Route path="/" element={<Page_About />} />

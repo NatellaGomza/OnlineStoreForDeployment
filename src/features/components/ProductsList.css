@@ -2,5 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px;
+}
+
+.wrapperProductList {
+    margin-top:100px;
+}
+
+.pageOptions {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.span span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border:1px solid tomato;
+    text-align: center;
 }

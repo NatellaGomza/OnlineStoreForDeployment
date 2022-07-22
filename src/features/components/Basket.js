@@ -112,11 +112,6 @@ function InitBasket(props) {
         }
     }
 
-    const deleteFromCart = () => {
-        let deletedProduct = props;
-        props.dispatch({ type: "deleteFromCart", payload: deletedProduct });
-    }
-
     return (
         <></>
     )
