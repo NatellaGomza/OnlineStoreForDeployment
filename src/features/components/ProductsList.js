@@ -2,7 +2,6 @@
 import { connect } from 'react-redux';
 
 import Product from './Product';
-import MyButton from './MyButton';
 import './ProductsList.css';
 
 function InitProductList(props) {
