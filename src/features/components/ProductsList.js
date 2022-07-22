@@ -46,9 +46,6 @@ function InitProductList(props) {
   return (
     <div className="wrapperProductList">
       <div className="pageOptions">
-        <select>
-          <option></option>
-        </select>
         {pagesAmmountArr.map(el =>       
           <span key={el} onClick = { ()=> {setPage(el)} }>{el}</span>
         )}
