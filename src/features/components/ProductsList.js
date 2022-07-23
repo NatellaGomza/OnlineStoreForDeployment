@@ -2,12 +2,20 @@
 import { connect } from 'react-redux';
 
 import Product from './Product';
+import SelectOptions from './SelectOptions';
 import './ProductsList.css';
 
 function InitProductList(props) {
 
   const [items, setItems] = useState(props.item);
   const [ammount, setAmmount] = useState(5);
+  
+  const [selectedAmmount, setSelectedAmmount] = useState([
+    {id:1, value:5, name:5},
+    {id:2, value:10, name:10},
+    {id:3, value:props.item.length, name:"Показать всё"},
+  ]);
+
   const pagesAmmountArr = [];
   const [page, setPage] = useState(1);
   const [firstItemOnPage, setFirstItemOnPage] = useState(0);
@@ -18,14 +26,10 @@ function InitProductList(props) {
   const pagesAmmount = Math.ceil(props.item.length / ammount);
 
   useEffect(() => {
-    console.log(page*ammount-ammount);
-    setFirstItemOnPage(page*ammount-ammount);
-    setLastItemOnPage(page*ammount);
-    console.log(firstItemOnPage);
-    console.log(lastItemOnPage);
-    console.log(page);
+    setFirstItemOnPage(page * ammount - ammount);
+    setLastItemOnPage(page * ammount);
     setItems([...props.item.slice(firstItemOnPage, lastItemOnPage)])
-  }, [page, firstItemOnPage, lastItemOnPage])
+  }, [page, firstItemOnPage, lastItemOnPage, ammount])
 
   for (let i = 0; i < pagesAmmount; i++) {
     pagesAmmountArr.push(i + 1);
@@ -45,10 +49,21 @@ function InitProductList(props) {
 
   return (
     <div className="wrapperProductList">
-      <div className="pageOptions">
-        {pagesAmmountArr.map(el =>       
-          <span key={el} onClick = { ()=> {setPage(el)} }>{el}</span>
-        )}
+      <div>
+        <SelectOptions 
+        defaultValue="Количество элементов на странице"
+        value={ammount}
+        onChange={el => setAmmount(el)}
+        options={[
+          {value:5, name:5},
+          {value:10, name:10},
+          {value:props.item.length, name:"Показать всё"},
+        ]}/>
+        <div className="pageOptions">
+          {pagesAmmountArr.map(el =>
+            <span key={el} onClick={() => { setPage(el) }}>{el}</span>
+          )}
+        </div>
       </div>
       <div className='wrapper'>
         {item}

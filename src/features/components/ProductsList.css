@@ -1,7 +1,7 @@
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .wrapperProductList {
@@ -9,8 +9,9 @@
 }
 
 .pageOptions {
-    display:flex;
-    justify-content: flex-end;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
 }
 
 .pageOptions span {
