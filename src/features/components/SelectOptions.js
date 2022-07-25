@@ -13,16 +13,4 @@ const SelectOptions = ({ options, defaultValue, value, onChange }) => {
     )
 }
 
-// const SelectOptions = () => {
-//     return (
-//         <select>
-//             <option disabled value=''>Количество элементов на странице</option>
-//                 <option> 5 </option>
-//                 <option> 10 </option>
-//                 <option> Показать все </option>
-//         </select>
-//     )
-// }
-
-
 export default SelectOptions;

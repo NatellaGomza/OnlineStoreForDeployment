@@ -9,12 +9,6 @@ function InitProductList(props) {
 
   const [items, setItems] = useState(props.item);
   const [ammount, setAmmount] = useState(5);
-  
-  const [selectedAmmount, setSelectedAmmount] = useState([
-    {id:1, value:5, name:5},
-    {id:2, value:10, name:10},
-    {id:3, value:props.item.length, name:"Показать всё"},
-  ]);
 
   const pagesAmmountArr = [];
   const [page, setPage] = useState(1);
