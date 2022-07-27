@@ -14,10 +14,15 @@
     right: 20px;
 }
 
-.pageOptions span {
+.page {
     display:inline-block;
     width:20px;
     height:20px;
-    border:1px solid tomato;
+    border:1px solid rgb(255, 117, 93);
     text-align: center;
+}
+
+.pageActive {
+    border:1px solid rgb(125, 40, 3);
+    font-weight: bold;
 }

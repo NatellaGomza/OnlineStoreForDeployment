@@ -7,7 +7,7 @@ function Page_Company() {
 
   return (
     <Company header={companyDescription.header}
-      text={companyDescription.text} />
+      text={companyDescription.description} />
   );
 }
 
